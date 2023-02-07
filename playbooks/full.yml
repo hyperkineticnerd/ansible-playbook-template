@@ -1,0 +1,32 @@
+#!/usr/bin/ansible-playbook
+---
+# - name: Juniper
+#   hosts: juniper
+#   gather_facts: false
+#   roles:
+#     - role: hyperkineticnerd.network.vlan
+
+- name: Full Configuration
+  hosts: arista
+  gather_facts: false
+  roles:
+    # - role: hyperkineticnerd.network.base
+    # - role: hyperkineticnerd.network.snmp
+    # - role: hyperkineticnerd.network.dhcp
+    # - role: hyperkineticnerd.network.tftp
+    - role: hyperkineticnerd.network.vlan
+      network_role_disable_l3: true
+    # - role: hyperkineticnerd.network.ethernet
+    # - role: hyperkineticnerd.network.bond
+
+# - name: Full Configuration
+#   hosts: brocade
+#   gather_facts: false
+#   roles:
+#     # - role: hyperkineticnerd.network.base
+#     # - role: hyperkineticnerd.network.snmp
+#     # - role: hyperkineticnerd.network.dhcp
+#     - role: hyperkineticnerd.network.tftp
+#     - role: hyperkineticnerd.network.vlan
+#     - role: hyperkineticnerd.network.ethernet
+#     # - role: hyperkineticnerd.network.bond

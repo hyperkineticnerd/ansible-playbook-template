@@ -1,0 +1,19 @@
+#!/usr/bin/ansible-playbook
+---
+# - name: Juniper VLANs
+#   hosts: juniper
+#   gather_facts: false
+#   roles:
+#     - role: hyperkineticnerd.network.vlan
+
+- name: Arista
+  hosts: arista
+  gather_facts: false
+  roles:
+    - role: hyperkineticnerd.network.vlan
+
+# - name: Brocade
+#   hosts: brocade
+#   gather_facts: false
+#   roles:
+#     - role: hyperkineticnerd.network.vlan
