@@ -1,0 +1,17 @@
+---
+- name: Site Playbook
+  hosts: all
+  pre_tasks:
+    - name: Pre-playbook setup tasks
+      ansible.builtin.debug:
+
+  tasks:
+    - name: Playbook tasks
+      ansible.builtin.debug:
+
+  roles: []
+    # - name:
+
+  post_tasks:
+    - name: Post-playbook cleanup tasks
+      ansible.builtin.debug:

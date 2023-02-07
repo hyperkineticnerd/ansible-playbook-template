@@ -1,0 +1,4 @@
+---
+inventory_static_routes:
+  - destination: 0.0.0.0/0
+    route: 172.16.0.1

@@ -1,0 +1,26 @@
+= Git Repo Template for Ansible Playbooks
+
+== Prerequisites
+
+[source,bash]
+-----
+ansible-galaxy collections install -r requirements.yml
+-----
+
+== Directory Structure
+
+[%header,cols=2*]
+|=====
+| Path
+| Purpose
+
+| playbooks/
+| playbooks for setting up network devices
+
+| inventories/{{ environment }}/group_vars/{{ device_type }}/*.yml
+| variables for any/all devices 
+
+| inventories/{{ environment }}/host_vars/{{ device }}/*.yml
+| variables for specific device
+
+|=====
