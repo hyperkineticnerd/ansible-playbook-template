@@ -1,0 +1,12 @@
+# Example Dynamic Inventory for AWS
+plugin: amazon.aws.aws_ec2
+
+# This sets the region. If empty (the default) default this will include all regions, except possibly
+# restricted ones like us-gov-west-1 and cn-north-1.
+regions:
+- us-east-1
+
+# Attach the default AWS profile
+aws_profile: default
+# You could use Jinja2 to attach the AWS profile from the environment variable.
+# aws_profile: "{{ lookup('env', 'AWS_PROFILE') | default('dev-profile', true) }}"
