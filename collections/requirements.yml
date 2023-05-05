@@ -1,0 +1,6 @@
+---
+collections:
+  - name: example.starter
+    version: main
+    type: git
+    source: https://github.com/hyperkineticnerd/ansible-collection-template.git
