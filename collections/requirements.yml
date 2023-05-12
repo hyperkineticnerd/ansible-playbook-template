@@ -4,3 +4,7 @@ collections:
     version: main
     type: git
     source: https://github.com/hyperkineticnerd/ansible-collection-template.git
+  - name: arista.eos
+  - name: cisco.ios
+  - name: junipernetworks.junos
+  
