@@ -3,6 +3,7 @@
   hosts: localhost
   connection: local
   gather_facts: false
+  become: false
   no_log: false
   vars:
     molecule_pip_dependencies:
